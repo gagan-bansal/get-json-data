@@ -49,6 +49,6 @@
     module.exports = makeRequest;
   }
   if(window) {
-    window.getjson = makeRequest;
+    window.getJOSNData = makeRequest;
   } 
 })();

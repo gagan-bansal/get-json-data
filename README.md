@@ -7,7 +7,7 @@ can not be more simpler:
 include ```index.js``` in your html.
 
 ```javascript
-getjson(url,callback);
+getJSONData(url,callback);
 //callback function 
 fucntion callback(err, data) {
   if (err) {
