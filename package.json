@@ -1,0 +1,15 @@
+{
+  "name": "getjson",
+  "version": "0.0.0",
+  "description": "\"Make ajax request to get the json.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ajax",
+    "json"
+  ],
+  "author": "Gagan Bansal",
+  "license": "MIT"
+}
