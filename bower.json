@@ -1,0 +1,11 @@
+{
+  "name": "get-json-data",
+  "description": "\"Make ajax request to get the json data.\"",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "ajax",
+    "json"
+  ],
+  "main": "index.js"
+}
