@@ -45,6 +45,9 @@
       }
     }
   }
+  if(typeof module !== 'undefined' && module.exports) {
+    module.exports = makeRequest;
+  }
   if(window) {
     window.getjson = makeRequest;
   } 
