@@ -1,4 +1,4 @@
-# getjson
+# get-json-data
 Make ajax request to get the json data.
 
 ## usage
