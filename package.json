@@ -1,6 +1,6 @@
 {
   "name": "get-json-data",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "\"Make ajax request to get the json data.\"",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,14 @@
     "ajax",
     "json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gagan-bansal/get-json-data"
+  },
   "author": "Gagan Bansal",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gagan-bansal/get-json-data/issues"
+  },
+  "homepage": "https://github.com/gagan-bansal/get-json-data"
 }
