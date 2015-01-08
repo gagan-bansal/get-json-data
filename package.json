@@ -1,6 +1,6 @@
 {
   "name": "get-json-data",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "\"Make ajax request to get the json data.\"",
   "main": "index.js",
   "scripts": {

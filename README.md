@@ -17,6 +17,8 @@ fucntion callback(err, data) {
   // do something with data
 }
 ```
+### note
+This module does not support jsonp. For jsonp request you may use [jsonp](https://www.npmjs.com/package/jsonp) module.
 ##License
 This project is licensed under the terms of the MIT license.
 
