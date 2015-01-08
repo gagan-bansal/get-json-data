@@ -1,5 +1,6 @@
 # get-json-data
-Make ajax request to get the json data.
+Make ajax request to get the json data from browser. Not for nodejs, use [request](https://www.npmjs.com/package/request) module instead. 
+
 
 ## usage
 can not be more simpler:

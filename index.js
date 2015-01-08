@@ -48,7 +48,7 @@
   if(typeof module !== 'undefined' && module.exports) {
     module.exports = makeRequest;
   }
-  if(window) {
+  if(typeof window!== 'undefined') {
     window.getJSONData = makeRequest;
   } 
 })();
