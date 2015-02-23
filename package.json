@@ -1,7 +1,7 @@
 {
   "name": "get-json-data",
-  "version": "0.0.5",
-  "description": "\"Make ajax request to get the json data.\"",
+  "version": "0.0.6",
+  "description": "Make ajax request to get the json data.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,3 +1,4 @@
+// get-json-data
 //code from https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
 (function() {
   var httpRequest;
@@ -23,28 +24,27 @@
         null);
       return false;
     }
-    httpRequest.onreadystatechange = success;
+    httpRequest.onreadystatechange = function() {
+      if (httpRequest.readyState === 4) {
+        if (httpRequest.status === 200) {
+          try {
+            var data = JSON.parse(httpRequest.responseText);
+          } catch (e) {
+            callback.call(this, e,null);
+            return;
+          }
+          callback.call(this,null,data);
+        } else {
+          callback.call(this,
+            'There was a problem with the request.',
+            null);
+        }
+      }
+    };
     httpRequest.open('GET', url);
     httpRequest.send();
   }
 
-  function success() {
-    if (httpRequest.readyState === 4) {
-      if (httpRequest.status === 200) {
-        try {
-          var data = JSON.parse(httpRequest.responseText);
-        } catch (e) {
-          callback.call(this, e,null);
-          return;
-        }
-        callback.call(this,null,data);
-      } else {
-        callback.call(this,
-          'There was a problem with the request.',
-          null);
-      }
-    }
-  }
   if(typeof module !== 'undefined' && module.exports) {
     module.exports = makeRequest;
   }
