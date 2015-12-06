@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/gagan-bansal/get-json-data/issues"
   },
-  "homepage": "https://github.com/gagan-bansal/get-json-data"
+  "homepage": "https://github.com/gagan-bansal/get-json-data",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.16.1"
+  }
 }
