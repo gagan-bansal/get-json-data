@@ -25,7 +25,7 @@
     }
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
+        if (xhr.status >= 200 && xhr.status <400) {
           var data = xhr.responseText,
             raw = opt && opt.hasOwnProperty('raw') ? opt.raw : false;  
           if(!raw) {
