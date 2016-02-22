@@ -44,19 +44,19 @@
         }
       }
     };
-    var params = [];
-    if (opt && opt.params && typeof(opt.params) == 'object') {
-      for( var key in opt.params) {
-        params.push(key +'='+ encodeURIComponent(opt.params[key]));
-      }
-    }
     var method = opt && opt.method ? opt.method : 'GET';
     if (method == 'GET') { 
+      var params = [];
+      if (opt && opt.params && typeof(opt.params) == 'object') {
+        for( var key in opt.params) {
+          params.push(key +'='+ encodeURIComponent(opt.params[key]));
+        }
+      }
       url = params.length > 0 ? url+'?'+params.join('&') : url;
       xhr.open('GET', url);
       xhr.send();
     } else if (method == 'POST') {
-      var data = opt && opt.data ? opt.data : params.join('&');
+      var data = opt && opt.data ? opt.data : opt.params ? opt.params : {};
       xhr.open('POST', url);
       xhr.send(JSON.stringify(data));
     }
